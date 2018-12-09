@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Concurrent-Queue" />
         <module name="Thread-Basic" />
         <module name="Thread-Communication" />
+        <module name="Thread-Pool" />
         <module name="Thread-Security" />
       </profile>
     </annotationProcessing>

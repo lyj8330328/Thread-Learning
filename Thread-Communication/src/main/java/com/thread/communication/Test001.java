@@ -3,8 +3,18 @@ package com.thread.communication;
 /**
  * @Author: 98050
  * @Time: 2018-12-05 23:19
- * @Feature:
+ * @Feature: 使用wait()和notify()实现生产者消费者
  */
+public class Test001 {
+
+    public static void main(String[] args) {
+        Res res = new Res();
+        InThread inThread = new InThread(res);
+        OutThread outThread = new OutThread(res);
+        inThread.start();
+        outThread.start();
+    }
+}
 
 /**
  * 共享对象
@@ -92,13 +102,3 @@ class OutThread extends Thread{
     }
 }
 
-public class Test001 {
-
-    public static void main(String[] args) {
-        Res res = new Res();
-        InThread inThread = new InThread(res);
-        OutThread outThread = new OutThread(res);
-        inThread.start();
-        outThread.start();
-    }
-}

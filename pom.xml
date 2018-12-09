@@ -12,6 +12,8 @@
         <module>Thread-Basic</module>
         <module>Thread-Security</module>
         <module>Thread-Communication</module>
+        <module>Concurrent-Queue</module>
+        <module>Thread-Pool</module>
     </modules>
 
 

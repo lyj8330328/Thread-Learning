@@ -6,4 +6,5 @@ package com.thread.communication;
  * @Feature: Lock的使用
  */
 public class Test005 {
+
 }
