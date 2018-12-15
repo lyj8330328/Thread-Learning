@@ -14,6 +14,7 @@
         <module>Thread-Communication</module>
         <module>Concurrent-Queue</module>
         <module>Thread-Pool</module>
+        <module>Thread-Lock</module>
     </modules>
 
 

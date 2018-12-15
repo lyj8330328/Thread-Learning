@@ -9,6 +9,7 @@
         <module name="Concurrent-Queue" />
         <module name="Thread-Basic" />
         <module name="Thread-Communication" />
+        <module name="Thread-Lock" />
         <module name="Thread-Pool" />
         <module name="Thread-Security" />
       </profile>
