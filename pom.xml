@@ -15,6 +15,7 @@
         <module>Concurrent-Queue</module>
         <module>Thread-Pool</module>
         <module>Thread-Lock</module>
+        <module>Disruptor</module>
     </modules>
 
 
