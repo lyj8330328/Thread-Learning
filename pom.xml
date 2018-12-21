@@ -16,6 +16,7 @@
         <module>Thread-Pool</module>
         <module>Thread-Lock</module>
         <module>Disruptor</module>
+        <module>JUC</module>
     </modules>
 
 

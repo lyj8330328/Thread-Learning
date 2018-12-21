@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Concurrent-Queue" />
         <module name="Disruptor" />
+        <module name="JUC" />
         <module name="Thread-Basic" />
         <module name="Thread-Communication" />
         <module name="Thread-Lock" />
