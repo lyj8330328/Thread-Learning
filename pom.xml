@@ -17,6 +17,7 @@
         <module>Thread-Lock</module>
         <module>Disruptor</module>
         <module>JUC</module>
+        <module>Java-Util</module>
     </modules>
 
 

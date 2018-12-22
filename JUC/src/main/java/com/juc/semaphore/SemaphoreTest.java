@@ -33,7 +33,6 @@ public class SemaphoreTest {
             });
         }
         executorService.shutdown();
-
     }
 
 }
