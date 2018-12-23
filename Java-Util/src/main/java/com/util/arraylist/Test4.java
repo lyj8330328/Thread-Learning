@@ -13,7 +13,7 @@ public class Test4 {
 
     public static void main(String[] args) throws InterruptedException, NoSuchFieldException, IllegalAccessException {
 
-         final List<Integer> list = new ArrayList<Integer>();
+         final List<String> list = new ArrayList<String>();
 
         /**
          * 线程1将0——10填充到list中
@@ -23,11 +23,11 @@ public class Test4 {
             public void run() {
                 for (int i = 0; i < 10; i++) {
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(10);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    list.add(i);
+                    list.add(Thread.currentThread().getName() + "添加:" + i);
                 }
             }
         }).start();
@@ -41,11 +41,11 @@ public class Test4 {
             public void run() {
                 for (int i = 10; i < 20; i++) {
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(10);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    list.add(i);
+                    list.add(Thread.currentThread().getName() + "添加:" + i);
                 }
             }
         }).start();
@@ -59,7 +59,7 @@ public class Test4 {
         Object[] objects = (Object[]) field.get(list);
         System.out.println("list的容量：" + objects.length);
         for (int i = 0; i < objects.length; i++) {
-            System.out.println("第"+(i+1)+"个元素：" + objects[i]);
+            System.out.println(objects[i]);
         }
     }
 
