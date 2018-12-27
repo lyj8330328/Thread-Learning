@@ -16,14 +16,14 @@ public class Test {
         final CopyOnWriteArraySet<Integer> list = new CopyOnWriteArraySet<Integer>();
 
         /**
-         * 线程1将0——10填充到set中
+         * 线程1将0——9填充到set中
          */
         new Thread(new Runnable() {
             @Override
             public void run() {
                 for (int i = 0; i < 10; i++) {
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(10);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -34,14 +34,14 @@ public class Test {
 
 
         /**
-         * 线程2将10——20填充到set中
+         * 线程2将10——19填充到set中
          */
         new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 10; i++) {
+                for (int i = 10; i < 20; i++) {
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(10);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
