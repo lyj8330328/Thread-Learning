@@ -14,6 +14,7 @@ public class Test3 {
         for (String s : temp){
             result += s;
         }
+        System.out.println(result);
         //获取命令码
         String cmdType = result.substring(8, 10).toUpperCase();
         String recvData = result.substring(10, result.length() - 4).toUpperCase();
